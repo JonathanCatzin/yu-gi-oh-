@@ -15,19 +15,11 @@ export const CartaList = () => {
         <Loader />
     ) : (
         <div className='card-list-carta container'>
-            {/* {filteredCartas.length ? (
-                <>
-                    {filteredCartas.map(carta => (
-                        <CardCarta carta={carta} key={carta.id} />
-                    ))}
-                </>
-            ) : ( */}
                 <>
                     {allCartas.map(carta => (
                         <CardCarta carta={carta} key={carta.id} />
                     ))}
                 </>
-            
         </div>
     )}
 				

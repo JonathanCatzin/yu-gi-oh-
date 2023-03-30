@@ -4,7 +4,7 @@
 :root{
     --color-type: #808080;
 	--color-primary: #0a2a4e;
---color-primary-hover: #6b9bd0;
+    --color-primary-hover: #6b9bd0;
 }
 
 *{
@@ -15,11 +15,13 @@
 
 body {
 	font-family: 'Montserrat';
+      background-color: #6b9bd0;
 }
 /* Globales */
 .container {
-	max-width: 1200px;
+	max-width: 100%;
 	margin: 0 auto;
+    padding: 40px 100px 40px 100px;
 }
 
 /* Header */
@@ -27,9 +29,9 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 40px 0;
+	padding: 40px 0px;
+    background-color: #d56723;
 }
-
 
 .logo img{
     width: 150px;
@@ -42,6 +44,7 @@ header form{
 }
 
 .form-group{
+    background-color: #fff;
     height: 45px;
     display: flex;
     align-items: center;
@@ -90,7 +93,8 @@ header form{
 .card-list-carta{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 70px;
+    gap: 20px;
+    padding-top: 10px;
 }
 
 .card-carta{
@@ -143,46 +147,6 @@ header form{
 /* Types of carta*/
 .type{
 	background-color: var(--color-type);
-}
-
-
-/* Container Filters */
-.container-filters{
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    width: 250px;
-    left: -300px;
-    color: #555;
-    background-color: #f2f2f2;
-    height: 100%;
-    padding: 30px;
-    padding-bottom: 140px;
-    overflow-y: scroll;
-}
-
-
-.filter-by-type{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.filter-by-type span{
-    font-weight: 700;
-    font-size: 22px;
-}
-
-.group-type{
-    display: flex;
-    gap: 10px;
-
-    margin: 15px ;
-}
-
-.group-type label{
-    cursor: pointer;
 }
 
 
@@ -252,31 +216,6 @@ Styles of cartaSingle Page
     font-weight: 700;
 }
 
-/* Stats */
-.container-stats{
-    display: flex;
-    gap: 50px;
-    align-items: center;
-}
-
-.stats{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    flex: 1;
-}
-
-.stat-group{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.stat-group span{
-    flex: 20%;
-    font-weight: 500;
-    font-size: 18px;
-}
 
 .progress-bar{
     width: 100%;
@@ -285,29 +224,6 @@ Styles of cartaSingle Page
     border-radius: 10px;
 }
 
-
-/* Btn Filter */
-.container-filter {
-	display: flex;
-}
-
-.icon-filter {
-	display: flex;
-	align-items: center;
-	gap: 15px;
-	margin-bottom: 20px;
-	cursor: pointer;
-}
-
-.icon-filter .icon {
-	width: 30px;
-	height: 30px;
-	stroke: #555;
-}
-
-.container-filters.active{
-    left: 0;
-}
 
 
 .container-loader{
