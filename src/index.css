@@ -1,0 +1,344 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
+:root{
+    --color-type: #808080;
+	--color-primary: #0a2a4e;
+--color-primary-hover: #6b9bd0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat';
+}
+/* Globales */
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* Header */
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 40px 0;
+}
+
+
+.logo img{
+    width: 150px;
+}
+
+header form{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-group{
+    height: 45px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #555;
+    padding: 0px 0px 0px 15px;
+    border-radius: 25px;
+}
+
+.form-group input{
+    
+    margin-left: 5px;
+    font-family: inherit;
+    width: 700px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.icon-search{
+    width: 20px;
+    height: 20px;
+    stroke: #555;
+}
+
+.btn-search{
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 0 25px 25px 0;
+    font-family: inherit;
+    padding: 15px 30px;
+    cursor: pointer;
+    background-color: var(--color-primary);
+    color: #fff;
+    font-size: 15px;
+}   
+
+.btn-search:hover{
+    background-color: var(--color-primary-hover);
+    color: #000;
+}
+
+
+/* Card List carta*/
+.card-list-carta{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px;
+}
+
+.card-carta{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card-img{
+    background-color: #f2f2f2;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 250px;
+}
+
+.card-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-info{
+    padding: 15px;
+}
+
+.card-info h3{
+    color: #333;
+}
+
+.carta-id{
+    display: block;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.card-types{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.card-types span{
+    font-size: 12px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Types of carta*/
+.type{
+	background-color: var(--color-type);
+}
+
+
+/* Container Filters */
+.container-filters{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 250px;
+    left: -300px;
+    color: #555;
+    background-color: #f2f2f2;
+    height: 100%;
+    padding: 30px;
+    padding-bottom: 140px;
+    overflow-y: scroll;
+}
+
+
+.filter-by-type{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.filter-by-type span{
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.group-type{
+    display: flex;
+    gap: 10px;
+
+    margin: 15px ;
+}
+
+.group-type label{
+    cursor: pointer;
+}
+
+
+
+/* 
+======================================= 
+Styles of cartaSingle Page
+======================================= 
+*/
+
+.main-carta{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.header-main-carta{
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+.number-carta{
+    position: absolute;
+    top: -70px;
+    left: 0;
+
+    font-size: 300px;
+    font-weight: 700;
+    color: var(--color-primary-hover);
+}
+
+.container-img-carta{
+    flex: 1;
+    padding: 10px;
+}
+
+.container-img-carta img{
+    width: 65%;
+}
+
+.container-info-carta{
+    display: flex;
+    flex-direction: column;
+
+    order: 1;
+    flex: 1;
+}
+
+.container-info-cartah1{
+    text-align: right;
+    font-size: 50px;
+
+}
+
+.info-carta{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 20px;
+}
+
+.group-info p{
+    font-weight: 700;
+}
+
+/* Stats */
+.container-stats{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.stat-group{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.stat-group span{
+    flex: 20%;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.progress-bar{
+    width: 100%;
+    height: 30px;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+}
+
+
+/* Btn Filter */
+.container-filter {
+	display: flex;
+}
+
+.icon-filter {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+.icon-filter .icon {
+	width: 30px;
+	height: 30px;
+	stroke: #555;
+}
+
+.container-filters.active{
+    left: 0;
+}
+
+
+.container-loader{
+	display: flex;
+	justify-content: center;
+	margin: 200px 0;
+}
+
+/* Btn Load More */
+
+.container-btn-load-more{
+	display: flex;
+	justify-content: center;
+
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.btn-load-more{
+	border: none;
+	padding: 15px 40px;
+	font-family: inherit;
+	background-color: var(--color-primary);
+	color: #fff;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.btn-load-more:hover{
+	background-color: var(--color-primary-hover);
+	color: #000;
+}
+
+
